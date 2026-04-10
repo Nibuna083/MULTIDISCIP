@@ -1,0 +1,155 @@
+BUSINESS NAME:
+AI Adoption Index & Strategic Roadmap Tool
+
+----------------------------------------
+ABOUT US
+----------------------------------------
+We provide a comprehensive AI Adoption Index and Strategic Roadmap platform designed 
+specifically for Small and Medium-sized Businesses (SMBs). Our tool helps businesses 
+assess their current AI maturity, understand where they stand globally, and receive 
+actionable recommendations to accelerate their AI adoption journey.
+
+Our mission is to democratize AI adoption by providing accessible, data-driven insights 
+and connecting businesses with government resources and funding opportunities.
+
+----------------------------------------
+WHAT WE OFFER
+----------------------------------------
+
+AI ADOPTION ASSESSMENT:
+- 4-pillar evaluation framework
+- Quick 5-minute assessment process
+- Comprehensive analysis based on industry standards
+- Real-time scoring and benchmarking
+- No technical expertise required
+
+KEY FEATURES:
+- AI Maturity Scoring: Evaluate your organization's current AI readiness across 4 pillars
+- Global Benchmarking: Compare your score with industry averages
+- Strategic Roadmap: Get a personalized, step-by-step action plan
+- Government Resources: Access information about available grants and funding
+- Actionable Recommendations: Specific, prioritized steps tailored to your business
+- Industry Insights: Learn from successful AI adoption cases in your industry
+
+OUR 4-PILLAR FRAMEWORK:
+1. STRATEGY & VISION: Your organizational AI strategy and executive alignment
+2. TECHNOLOGY & INFRASTRUCTURE: Cloud readiness, data infrastructure, and tech capabilities
+3. TALENT & SKILLS: Team expertise, training readiness, and capability gaps
+4. DATA & GOVERNANCE: Data quality, security, compliance, and risk management
+
+----------------------------------------
+HOW IT WORKS
+----------------------------------------
+
+STEP 1: ASSESSMENT
+- Answer 15-20 carefully designed questions
+- Takes approximately 4-5 minutes
+- No sign-up or account required to start
+
+STEP 2: IMMEDIATE RESULTS
+- Receive an AI Adoption Index score (0-100)
+- See your standings in each of the 4 pillars
+- Global benchmark comparison
+- Industry-specific insights
+
+STEP 3: STRATEGIC ROADMAP
+- Get a prioritized action plan
+- Specific recommendations for improvement
+- Resource suggestions and best practices
+- Information about government grants and funding programs
+- Timeline estimates for implementation
+
+STEP 4: TAKE ACTION
+- Start with quick wins to build momentum
+- Follow your personalized roadmap
+- Track progress over time
+- Access government support programs
+
+----------------------------------------
+WHO IS THIS FOR?
+----------------------------------------
+
+IDEAL CUSTOMERS:
+- Small and Medium-sized Businesses (SMBs)
+- Startups looking to scale with AI
+- Non-tech companies exploring AI adoption
+- Businesses in any industry
+- Organizations with limited AI expertise
+
+PERFECT FOR:
+- Executives and decision-makers
+- CTOs and IT leaders
+- Business development teams
+- Government agencies supporting SMBs
+- Consultants advising on AI adoption
+
+----------------------------------------
+BUSINESS BENEFITS
+----------------------------------------
+
+STRATEGIC CLARITY:
+- Align your team on AI priorities
+- Create a data-driven roadmap
+- Reduce risk and uncertainty
+
+COMPETITIVE ADVANTAGE:
+- Identify gaps your competitors are missing
+- Fast-track AI adoption
+- Leverage government support
+
+FINANCIAL BENEFITS:
+- Access to government grants and funding
+- ROI-focused recommendations
+- Cost-efficient implementation strategies
+
+OPERATIONAL EXCELLENCE:
+- Structured approach to AI adoption
+- Build internal capabilities
+- Achieve measurable results
+
+----------------------------------------
+COMMON QUESTIONS
+----------------------------------------
+
+Q: How accurate is the assessment?
+A: Our assessment is based on industry standards and AI maturity models used globally. 
+The accuracy depends on how accurately you answer the questions. We recommend involving 
+multiple stakeholders for the most comprehensive picture.
+
+Q: Do I need to know about AI to use this?
+A: No! Our assessment is designed for everyone. The questions are in plain language, 
+and the results are explained in non-technical terms.
+
+Q: How long does the assessment take?
+A: Typically 4-5 minutes. It's designed to be quick yet comprehensive.
+
+Q: Can I retake the assessment?
+A: Yes! You can take the assessment multiple times. Retaking it can show your progress 
+over time as you implement recommendations.
+
+Q: Is my data secure?
+A: Yes. We take data security and privacy seriously. Your data is encrypted and stored securely.
+
+Q: Are government grants really available?
+A: Yes. Many governments offer AI adoption grants for SMBs. The specific programs depend 
+on your location and industry. Our tool provides information about programs in your region.
+
+Q: Is this tool free?
+A: The assessment is completely free. We believe AI adoption should be accessible to all businesses.
+
+Q: How can I use the roadmap?
+A: Use it as your action plan. Start with quick wins, build momentum, and follow the 
+prioritized steps. Each recommendation includes resources and guidance.
+
+----------------------------------------
+CONTACT & SUPPORT
+----------------------------------------
+
+Need help getting started?
+- Start with the quick assessment
+- Review your personalized roadmap
+- Check our resource section for best practices
+- Contact our team for enterprise support
+
+Ready to assess your AI adoption?
+Start your free assessment now and get your strategic roadmap!

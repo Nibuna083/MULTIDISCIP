@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chatbot Widget</title>
+  <link rel="stylesheet" href="widget.css">
+</head>
+<body>
+  <!-- Chat Widget Button -->
+  <div id="chat-widget-button" class="chat-widget-button" aria-label="Open chat">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z" fill="white"/>
+    </svg>
+  </div>
+
+  <!-- Chat Widget Container -->
+  <div id="chat-widget-container" class="chat-widget-container hidden">
+    <div class="chat-widget-header">
+      <h3>AI Assistant</h3>
+      <button id="chat-close-btn" class="close-btn" aria-label="Close chat">&times;</button>
+    </div>
+    
+    <div id="chat-messages" class="chat-messages">
+      <div class="message bot-message">
+        <div class="message-content">
+          Hi! I'm your AI assistant. How can I help you today?
+        </div>
+      </div>
+    </div>
+    
+    <!-- Chat Suggestions -->
+    <div id="chat-suggestions" class="chat-suggestions">
+      <button class="suggestion-chip">Tell me about your services</button>
+      <button class="suggestion-chip">What are your pricing options?</button>
+      <button class="suggestion-chip">How can I get started?</button>
+      <button class="suggestion-chip">What makes you different?</button>
+    </div>
+    
+    <div class="chat-input-container">
+      <input 
+        type="text" 
+        id="chat-input" 
+        placeholder="Type your message..."
+        class="chat-input"
+      />
+      <button id="chat-send-btn" class="send-btn" aria-label="Send message">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="white"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div id="contact-modal" class="contact-modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Contact Us</h3>
+        <button id="close-modal-btn" class="close-modal-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="contact-name">Name *</label>
+          <input 
+            type="text" 
+            id="contact-name" 
+            name="name"
+            placeholder="Your name"
+            required
+            class="form-input"
+          />
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email *</label>
+          <input 
+            type="email" 
+            id="contact-email" 
+            name="email"
+            placeholder="your@email.com"
+            required
+            class="form-input"
+          />
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="widget.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Google Sheets Submission</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #667eea;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #5568d3;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 4px;
+      display: none;
+    }
+    .success {
+      background: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    .error {
+      background: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+    .info {
+      background: #d1ecf1;
+      color: #0c5460;
+      border: 1px solid #bee5eb;
+      padding: 15px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Test Google Sheets Form Submission</h1>
+  
+  <div class="info">
+    <strong>Instructions:</strong>
+    <ol>
+      <li>Make sure you updated the Google Apps Script <code>doGet</code> function</li>
+      <li>Fill in the form below</li>
+      <li>Click Submit</li>
+      <li>Check your Google Sheet for the new row</li>
+    </ol>
+  </div>
+
+  <form id="testForm">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required value="Test User">
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required value="test@example.com">
+    </div>
+    
+    <button type="submit">Submit to Google Sheets</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    // PASTE YOUR GOOGLE APPS SCRIPT URL HERE
+    const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbwWe6w9SWHvwJ0hhrpoD7n_gF5Wqo2jknZbQoUxrQeOHf-_mSvB74IWwfAOMlST0tnl/exec';
+
+    const form = document.getElementById('testForm');
+    const resultDiv = document.getElementById('result');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const timestamp = new Date().toISOString();
+      
+      resultDiv.style.display = 'block';
+      resultDiv.className = 'info';
+      resultDiv.innerHTML = '⏳ Submitting...';
+      
+      try {
+        // Build URL with parameters
+        const url = `${GOOGLE_SHEET_URL}?name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&timestamp=${encodeURIComponent(timestamp)}`;
+        
+        console.log('Submitting to:', url);
+        
+        // Method 1: Try with fetch
+        const response = await fetch(url, {
+          method: 'GET',
+          redirect: 'follow'
+        });
+        
+        console.log('Response status:', response.status);
+        console.log('Response URL:', response.url);
+        
+        const text = await response.text();
+        console.log('Response text:', text);
+        
+        resultDiv.className = 'success';
+        resultDiv.innerHTML = `
+          ✅ <strong>Success!</strong><br>
+          Check your Google Sheet now!<br><br>
+          <strong>Submitted data:</strong><br>
+          Name: ${name}<br>
+          Email: ${email}<br>
+          Timestamp: ${timestamp}<br><br>
+          <strong>Response:</strong> ${text || 'Request completed'}
+        `;
+        
+      } catch (error) {
+        console.error('Error:', error);
+        resultDiv.className = 'error';
+        resultDiv.innerHTML = `
+          ⚠️ <strong>Request sent but couldn't read response (normal with CORS)</strong><br>
+          Check your Google Sheet to see if data was saved!<br><br>
+          <strong>Error:</strong> ${error.message}
+        `;
+      }
+    });
+
+    // Test direct link
+    console.log('Google Sheet URL:', GOOGLE_SHEET_URL);
+    console.log('Test it directly by clicking this link:');
+    console.log(`${GOOGLE_SHEET_URL}?name=DirectTest&email=direct@test.com&timestamp=${new Date().toISOString()}`);
+  </script>
+
+  <div style="margin-top: 30px; padding: 15px; background: #f8f9fa; border-radius: 4px;">
+    <h3>Debugging Steps:</h3>
+    <ol>
+      <li><strong>Open browser console</strong> (F12) to see detailed logs</li>
+      <li><strong>Check your Google Sheet</strong> after clicking Submit</li>
+      <li><strong>Verify Apps Script</strong>: 
+        <ul>
+          <li>Open your Google Sheet</li>
+          <li>Extensions → Apps Script</li>
+          <li>Check if <code>doGet</code> function handles <code>e.parameter.name</code> and <code>e.parameter.email</code></li>
+          <li>View → Executions to see if requests are coming through</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</body>
+</html>

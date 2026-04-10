@@ -1,0 +1,14 @@
+node_modules
+.env
+*.log
+.DS_Store
+test-*.ps1
+test-*.js
+start-server.ps1
+stop-server.ps1
+server-pid.txt
+EXAMPLES.md
+FIXED.md
+QUICKSTART.md
+SESSION-MANAGEMENT.md
+POWERSHELL-COMMANDS.md
